@@ -76,6 +76,8 @@ Open `http://localhost:3000` and sign in at `/admin/login` with the single admin
 npm run build
 ```
 
+After deployment, open `/api/health` on the live site to confirm Vercel can reach PostgreSQL.
+
 ## Notes
 
 - Resume content is not extracted automatically. Upload the PDF from the admin panel.

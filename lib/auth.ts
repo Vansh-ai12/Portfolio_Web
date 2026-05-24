@@ -3,6 +3,7 @@ import Credentials from "next-auth/providers/credentials";
 import { loginSchema } from "@/lib/validations";
 
 export const authConfig = {
+  secret: process.env.AUTH_SECRET ?? process.env.NEXTAUTH_SECRET ?? process.env.ADMIN_PASSWORD,
   session: { strategy: "jwt" },
   pages: { signIn: "/admin/login" },
   providers: [
